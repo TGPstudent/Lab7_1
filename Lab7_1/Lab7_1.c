@@ -4,10 +4,11 @@
 #include <locale.h>
 #include <stdio.h>
 #include <conio.h>
+#include <stdbool.h>
 
-int Even (int k);
+bool Even (int k);
 
-	int main(void)
+int main(void)
 {
 	int i, a[10], s = 0;
 	setlocale(LC_CTYPE, "ukr");
@@ -31,8 +32,7 @@ int Even (int k);
 	return 0;
 }
 	//Функція перевірки парності числа
-
- int Even(int k) 
+ bool Even (int k) 
 {
-	 if (k % 2 == 0)  return 1; else return 0;
+	 if (k % 2 == 0)  return true; else return false;
 }
